@@ -1,12 +1,23 @@
 import React, { Component } from 'react'
 import { graphql } from 'gatsby'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import Content from '../components/content'
+import Heading from '../components/heading'
 
 
 class Cv extends Component {
   render() {
-
+    const post = this.props.data.wordpressWpCv
     return (
-      <div />
+      <div>
+        <SEO title={post.title} description={post.excerpt} />
+        <Layout>
+          <Heading heading={post.title} />
+          <Content content={post.content} />
+         
+        </Layout>
+      </div>
     )
   }
 }
@@ -17,6 +28,8 @@ export const pageQuery = graphql`
   query currentCvQuery($id: String!) {
     wordpressWpCv(id: { eq: $id }) {
       title
+      excerpt
+      content
     }
   }
 `

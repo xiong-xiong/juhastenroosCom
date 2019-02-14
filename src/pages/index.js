@@ -17,7 +17,7 @@ const IndexPage = ({ data }) => {
         title="Juha Stenroos – Frontpage"
         description="Web developer"
       />
-        <Grid posts={posts} label="Blog" />
+        <Grid posts={posts} label="Blog" prefix="post" />
        
     </Layout>
   )

@@ -10,6 +10,7 @@ const Grid = props => (
           post={post.node}
           key={post.node.id}
           label={props.label}
+          prefix={props.prefix}
           cv={(props.cv === true) ? true : false}
         />
       )

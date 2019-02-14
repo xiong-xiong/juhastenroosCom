@@ -18,7 +18,7 @@ const Cv = ({ data }) => {
         title="Juha Stenroos – Frontpage"
         description="Web developer"
       />
-        <Grid posts={posts} label="Cv" cv={true} />
+        <Grid posts={posts} label="Cv" cv={true} prefix="cv" />
        
     </Layout>
   )
@@ -33,6 +33,7 @@ export const pageQuery = graphql`
         node {
           title
           content
+          slug
           acf{
             order
           } 
