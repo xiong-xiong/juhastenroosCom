@@ -34,6 +34,7 @@ export const pageQuery = graphql`
           title
           content
           slug
+          modified
           acf{
             order
           } 

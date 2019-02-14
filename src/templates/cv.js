@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Content from '../components/content'
 import Heading from '../components/heading'
+import './style.scss'
 
 
 class Cv extends Component {
@@ -13,8 +14,10 @@ class Cv extends Component {
       <div>
         <SEO title={post.title} description={post.excerpt} />
         <Layout>
-          <Heading heading={post.title} />
-          <Content content={post.content} />
+          <div className="singlePost">
+            <Heading heading={post.title} />
+            <Content content={post.content} />
+          </div>
          
         </Layout>
       </div>

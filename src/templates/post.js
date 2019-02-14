@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Content from '../components/content'
 import Heading from '../components/heading'
+import './style.scss'
 
 class Campaign extends Component {
   render() {
