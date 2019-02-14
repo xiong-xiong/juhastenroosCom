@@ -1,0 +1,48 @@
+.headerWrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999;
+  a {
+    color: black;
+  }
+}
+
+.headerContainer {
+  background: white;
+  color: black;
+  height: 80px;
+  padding: 0.5rem;
+  position: relative;
+  .current {
+    background: white;
+    border: 1px solid black;
+    color: black;
+  }
+
+  h1 {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    right: 1.2rem;
+  }
+  .siteSlogan {
+    position: absolute;
+    bottom: 10%;
+    right: 1.2rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+
+  svg {
+    font-size: 1.6rem;
+    margin: 20px;
+
+    &:hover {
+      cursor: pointer;
+      color: #444;
+    }
+  }
+
+}

@@ -1,0 +1,11 @@
+.frontFlexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  .frontLeft, .frontRight {
+    max-width: 50%;
+    padding: 0 10px;
+    @media screen and (max-width: 900px) {
+      max-width: 100%;
+    }
+  }
+}

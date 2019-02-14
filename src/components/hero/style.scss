@@ -1,0 +1,35 @@
+@import '../../_sass/_breakpoints';
+
+.heroContainer {
+  width: 100%;
+  margin-bottom: 30px;
+  height: 50vw;
+  max-height: 1200px;
+  @include medium {
+    height: auto;
+  }
+  
+  .heroVideoContainer {
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .heroSticker {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    height: 8rem;
+    width: 8rem;
+  }
+
+  video {
+    max-height: 50vw;
+
+    @include medium {
+      max-height: 70vh;
+    }
+  }
+}
+
+

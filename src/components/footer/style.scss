@@ -1,0 +1,72 @@
+@import '../../_sass/_breakpoints';
+
+.siteFooter {
+  background: black;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.footerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.0875rem;
+
+  @include medium {
+    display: block;
+    text-align: center;
+  }
+
+  h3 {
+    font-style: normal;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+}
+
+.footerSomeIcons {
+  display: flex;
+  align-items: center;
+
+  @include medium {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  & > a {
+    margin-right: 30px;
+    font-size: 1.6rem;
+    color: white;
+
+    @include medium {
+      margin: 0 20px;
+    }
+  }
+}
+
+.footerLeft {
+  display: flex;
+  align-items: center;
+
+  @include medium {
+    display: block;
+    margin-bottom: 25px;
+  }
+}
+
+.footerRight {
+
+  @include medium {
+    display: block;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+}

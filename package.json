@@ -1,0 +1,50 @@
+{
+  "name": "gatsby-starter-default",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "0.1.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "dependencies": {
+    "gatsby": "^2.0.76",
+    "gatsby-image": "^2.0.20",
+    "gatsby-link": "*",
+    "gatsby-plugin-manifest": "^2.0.9",
+    "gatsby-plugin-react-helmet": "^3.0.2",
+    "gatsby-plugin-sass": "^2.0.8",
+    "gatsby-plugin-sharp": "^2.0.14",
+    "gatsby-source-filesystem": "^2.0.8",
+    "gatsby-source-wordpress": "^3.0.25",
+    "gatsby-transformer-sharp": "^2.1.8",
+    "node-sass": "^4.11.0",
+    "prop-types": "^15.6.2",
+    "ramda": "^0.26.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-gif-player": "^0.4.2",
+    "react-helmet": "^5.2.0",
+    "react-icons": "^3.3.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "format": "prettier --write \"src/**/*.js\"",
+    "build:prod": "yarn build -- --prefix-links",
+    "deploy": "yarn build:prod && firebase deploy",
+    "test": "echo \"Warning: no test specified\" && exit 0"
+  },
+  "devDependencies": {
+    "prettier": "^1.15.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}

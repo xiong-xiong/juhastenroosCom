@@ -1,0 +1,26 @@
+@import '../../_sass/_breakpoints';
+
+.nextContent {
+    text-align: center;
+    margin-bottom: 25px;
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 1rem;
+        text-transform: uppercase;
+        background: black;
+        color: white;
+        text-decoration: none;
+        padding: 10px 25px;
+
+        @include medium {
+            font-size: 0.7rem;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.teaserBox {
+  display: block;
+  background: white;
+  padding: 30px 70px 10px 30px;
+  color: #555;
+  opacity: 0.9;
+  position: relative;
+  &:hover {
+    opacity: 1;
+  }
+
+  .teaserLabel {
+    background: black;
+    color: white;
+    padding: 4px 8px;
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    top: 7px;
+    right: -7px;
+  }
+}
