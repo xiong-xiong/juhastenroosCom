@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Content from '../components/content'
 import Heading from '../components/heading'
+import DateParser from '../components/dateparser'
 import './style.scss'
 
 
@@ -16,7 +17,11 @@ class Cv extends Component {
         <Layout>
           <div className="singlePost">
             <Heading heading={post.title} />
+           
             <Content content={post.content} />
+            <div className="articleDate">
+                Last edited: <DateParser date={post.modified} /> 
+            </div>
           </div>
          
         </Layout>
@@ -33,6 +38,7 @@ export const pageQuery = graphql`
       title
       excerpt
       content
+      modified
     }
   }
 `
