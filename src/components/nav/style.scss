@@ -1,8 +1,12 @@
 @import '../../_sass/_breakpoints';
 
 @keyframes navHover {
-  0%   { background: transparent; }
-  100% { background: whitesmoke; }
+  0% {
+    background: transparent;
+  }
+  100% {
+    background: whitesmoke;
+  }
 }
 
 .navContainer {
@@ -16,7 +20,7 @@
     background: url('../../assets/img/juha_stenroos.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom left;
+    background-position: bottom center;
     height: 100%;
     width: 100%;
     opacity: 0.2;
@@ -25,42 +29,42 @@
     top: 0;
     left: 0;
   }
-    ul {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      opacity: 1;
-      z-index: 999999999;
-      padding-top: 4rem;
-      list-style: none;
-      font-family: 'Raleway', sans-serif;
-      font-weight: 300;
-      color: #000;
-      text-transform: uppercase;
-      font-size: 1.5rem;
-      margin-left: 0;
+  ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 1;
+    z-index: 999999999;
+    padding-top: 4rem;
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-left: 0;
+    background: transparent;
+    li {
       background: transparent;
-      li {
+      a {
+        display: block;
+        padding: 0.5rem 2rem;
         background: transparent;
-        a {
-          display: block;
-          padding: .5rem 2rem;
-          background: transparent;
-          &:hover {
-            animation: navHover;
-            animation-duration: .6s;
-            background: whitesmoke;
-            opacity: 0.7;
-          }
-        }
-        .current {
+        &:hover {
+          animation: navHover;
+          animation-duration: 0.6s;
           background: whitesmoke;
           opacity: 0.7;
         }
       }
+      .current {
+        background: whitesmoke;
+        opacity: 0.7;
+      }
     }
-  
+  }
+
   @media screen and (min-width: 900px) {
     width: 25vw;
   }

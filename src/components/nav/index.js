@@ -42,6 +42,7 @@ class Nav extends Component {
                   Cv
                 </Link>
               </li>
+              {/*
               <li>
                 <Link to={`/portfolio`} aria-label="Portfolio" className={this.props.current === 'portfolio' ? 'current' : null}>
                   Portfolio
@@ -51,7 +52,7 @@ class Nav extends Component {
                 <Link to={`/freelance`} aria-label="Freelance" className={this.props.current === 'freelance' ? 'current' : null}>
                   Freelance
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <a 
                 href='http://juha.blog' 
