@@ -33,8 +33,8 @@ class Nav extends Component {
             <div className="navBg" />
             <ul>
               <li>
-                <Link to={`/`} aria-label="Etusivu" className={this.props.current === 'etusivu' ? 'current' : null}>
-                  Etusivu
+                <Link to={`/`} aria-label="Frontpage" className={this.props.current === 'etusivu' ? 'current' : null}>
+                  Frontpage
                 </Link>
               </li>
               <li>
