@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Juha Stenroos`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Juha Stenroos - web developer`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -43,8 +43,13 @@ module.exports = {
       }
     },
     `gatsby-plugin-sass`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    //'gatsby-plugin-offline',
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-86459499-6",
+        head: false,
+      },
+    },
   ],
 }
