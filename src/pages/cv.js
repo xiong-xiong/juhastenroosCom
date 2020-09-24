@@ -11,7 +11,7 @@ import './style.scss'
 
 const Cv = ({ data }) => {
   const posts = R.path(['post', 'edges'], data);
-  console.log(posts);
+ 
   return (
     <Layout current={'cv'}>
       <SEO
